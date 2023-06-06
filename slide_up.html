@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        
+        #top,#bottom 
+        {
+            background-color: palevioletred;
+            border:2px solid white;
+            padding: 5px;
+            text-align:center;
+        }
+        #bottom 
+        {
+        padding:50px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+        click here
+    </div>
+
+<div id="bottom">
+    Welcome
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>      
+    <script>
+        
+        $('#top').click(function() {
+            $('#bottom').slideUp()
+                });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome</h1>
+<button onclick="hide()">hide</button>
+<button onclick="show()">show</button>
+<button onclick="toggle()">toggle</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+function hide()
+{
+$('#heading').hide()
+}
+function show()
+{
+    $('#heading').show()
+}
+function toggle()
+{
+    $('#heading').toggle()
+}
+</script>
+ </body>
+</html>

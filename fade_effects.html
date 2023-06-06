@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1 id="demo">Welcome to futuralabs</h1>
+<button onclick="fadeout()">fade_out</button>
+<button onclick="fadein()">fade_in</button>
+<button onclick="fadeTo()">fade_to</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
+    <script>
+        function fadein()
+        {
+        $('#demo').fadeIn();
+        }
+        function fadeout()
+        {
+            $('#demo').fadeOut();
+        }
+        function fadeTo()
+        {
+            $('#demo').fadeTo(1000,0.2)
+        }
+        function fadetoggle()
+        {
+            $('#demo').fadeToggle
+        }
+    </script>
+  </body>
+</html>

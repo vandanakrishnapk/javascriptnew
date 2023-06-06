@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        #head,#tail 
+        {
+            background-color: chartreuse;
+            padding:5px;
+            border: 3px solid rgb(10, 17, 3);
+            text-align:center;
+        }
+        #tail 
+        {
+            display:none;
+            padding:60px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="head">Click here to slide down</div>
+    <div id="tail">The slide down</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>    
+    <script>
+        
+        $('#head').click(function() {
+            $('#tail').slideDown("slow");
+        });
+    </script>   
+  </body>
+</html>
